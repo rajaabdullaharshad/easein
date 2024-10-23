@@ -1,6 +1,6 @@
 frappe.ui.form.on("Quotation", {
-    items: function(frm) {
-        console.log("hello");
+    custom_brand: function(frm) {
+       
         
         frm.set_query('item_code', 'items', () => {
             return {
