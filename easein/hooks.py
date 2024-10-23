@@ -140,7 +140,12 @@ doctype_js = {
 # Document Events
 # ---------------
 # Hook on document methods and events
-
+doc_events = {
+	"Customer": {
+		"validate": "easein.events.customer.after_insert",
+	},
+    
+}
 # doc_events = {
 # 	"*": {
 # 		"on_update": "method",
