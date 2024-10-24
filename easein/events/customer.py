@@ -7,7 +7,7 @@ def after_insert(doc, method=None):
             # Create a new Supplier document
             supplier_doc = frappe.new_doc('Supplier')
             supplier_doc.supplier_name = doc.customer_name
-            supplier_doc.supplier_group = doc.customer_group
+            # supplier_doc.supplier_group = doc.customer_group
             supplier_doc.supplier_type = doc.customer_type
             
             # Save the new Supplier document
